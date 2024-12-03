@@ -1,0 +1,20 @@
+name: WebApp
+version: 1.0.0
+summary: Azure Web App Environment
+description: Deploys a web app in Azure without a datastore
+runner: adereg124.azurecr.io/terraform:sample
+templatePath: main.tf
+
+parameters:
+  - id: "location"
+    name: "location"
+    description: "Location to deploy the environment resources"
+    default: "[resourceGroup().location]"
+    type: "string"
+    required: false
+  - id: "name"
+    name: "name"
+    description: "Name of the Web App "
+    default: ""
+    type: "string"
+    required: true
