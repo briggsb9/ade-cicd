@@ -9,7 +9,7 @@ parameters:
   - id: "location"
     name: "location"
     description: "Location to deploy the environment resources"
-    default: "[resourceGroup().location]"
+    default: "West Europe"
     type: "string"
     required: false
   - id: "name"
