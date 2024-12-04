@@ -20,8 +20,8 @@ variable "resource_group_name" {
 
 resource "azurerm_app_service_plan" "example" {
     name                = "${var.name}-asp"
-    location            = ade_location
-    resource_group_name = resource_group_name
+    location            = var.ade_location
+    resource_group_name = var.resource_group_name
     sku {
         tier = "Standard"
         size = "S1"
@@ -30,8 +30,8 @@ resource "azurerm_app_service_plan" "example" {
 
 resource "azurerm_app_service" "example" {
     name                = "${var.name}-app"
-    location            = ade_location
-    resource_group_name = resource_group_name
+    location            = var.ade_location
+    resource_group_name = var.resource_group_name
     app_service_plan_id = azurerm_app_service_plan.example.id
 
     site_config {
