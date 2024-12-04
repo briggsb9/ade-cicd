@@ -1,4 +1,4 @@
-name: WebApp
+name: WebApp_Terraform
 version: 1.0.0
 summary: Azure Web App Environment
 description: Deploys a web app in Azure without a datastore
