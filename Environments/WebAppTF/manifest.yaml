@@ -6,12 +6,6 @@ runner: adereg124.azurecr.io/terraform:sample
 templatePath: main.tf
 
 parameters:
-  - id: "location"
-    name: "location"
-    description: "Location to deploy the environment resources"
-    default: "West Europe"
-    type: "string"
-    required: false
   - id: "name"
     name: "name"
     description: "Name of the Web App "
