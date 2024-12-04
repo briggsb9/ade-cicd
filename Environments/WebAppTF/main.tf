@@ -7,7 +7,7 @@ variable "name" {
   type        = string
 }
 
-variable "location" {
+variable "ade_location" {
   description = "The location of the resources"
   type        = string
 }
@@ -20,7 +20,7 @@ variable "resource_group_name" {
 
 resource "azurerm_app_service_plan" "example" {
     name                = "${var.name}-asp"
-    location            = location
+    location            = ade_location
     resource_group_name = resource_group_name
     sku {
         tier = "Standard"
@@ -30,7 +30,7 @@ resource "azurerm_app_service_plan" "example" {
 
 resource "azurerm_app_service" "example" {
     name                = "${var.name}-app"
-    location            = location
+    location            = ade_location
     resource_group_name = resource_group_name
     app_service_plan_id = azurerm_app_service_plan.example.id
 
