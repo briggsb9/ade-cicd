@@ -2,7 +2,7 @@ name: WebApp_Terraform
 version: 1.0.0
 summary: Azure Web App Environment
 description: Deploys a web app in Azure without a datastore
-runner: adereg124.azurecr.io/terraform:sample
+runner: pkukho/adeterraformrunner:latest
 templatePath: main.tf
 
 parameters:
