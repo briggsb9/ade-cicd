@@ -24,9 +24,9 @@ param runtime string = 'dotnet-isolated'
 @description('Tags to apply to environment resources')
 param tags object = {}
 
-var linexFxVersions = {
-  dotnet: 'DOTNET|6.0'
-  'dotnet-isolated': 'DOTNET-ISOLATED|7.0'
+var linuxFxVersions = {
+  dotnet: 'DOTNET|8.0'
+  'dotnet-isolated': 'DOTNET-ISOLATED|8.0'
   java: 'JAVA|17'
   node: 'NODE|18'
   powershell: 'POWERSHELL|7.2'
@@ -85,7 +85,7 @@ resource functionApp 'Microsoft.Web/sites@2022-03-01' = {
     serverFarmId: hostingPlan.id
     httpsOnly: supportsHttpsTrafficOnly
     siteConfig: {
-      linuxFxVersion: linexFxVersions[runtime]
+      linuxFxVersion: linuxFxVersions[runtime]
       appSettings: [
         {
           name: 'AzureWebJobsStorage'

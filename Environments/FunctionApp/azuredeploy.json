@@ -53,9 +53,9 @@
     }
   },
   "variables": {
-    "linexFxVersions": {
-      "dotnet": "DOTNET|6.0",
-      "dotnet-isolated": "DOTNET-ISOLATED|7.0",
+    "linuxFxVersions": {
+      "dotnet": "DOTNET|8.0",
+      "dotnet-isolated": "DOTNET-ISOLATED|8.0",
       "java": "JAVA|17",
       "node": "NODE|18",
       "powershell": "POWERSHELL|7.2",
@@ -117,7 +117,7 @@
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('name'))]",
         "httpsOnly": "[parameters('supportsHttpsTrafficOnly')]",
         "siteConfig": {
-          "linuxFxVersion": "[variables('linexFxVersions')[parameters('runtime')]]",
+          "linuxFxVersion": "[variables('linuxFxVersions')[parameters('runtime')]]",
           "appSettings": [
             {
               "name": "AzureWebJobsStorage",
