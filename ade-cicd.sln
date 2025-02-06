@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADE.Tutorial", "ADE.Tutorial\ADE.Tutorial.csproj", "{62C7F202-03BF-B07C-1019-94F021F0E442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C7F202-03BF-B07C-1019-94F021F0E442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C7F202-03BF-B07C-1019-94F021F0E442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C7F202-03BF-B07C-1019-94F021F0E442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C7F202-03BF-B07C-1019-94F021F0E442}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAE3C036-7A08-42B0-A9D0-7A1F42ABC89A}
+	EndGlobalSection
+EndGlobal
